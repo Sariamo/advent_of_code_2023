@@ -1,10 +1,8 @@
-l = []
-with open("input") as i:
-    for inp in i.readlines():
-        l.append(inp)
+import utils
 
+inp = utils.get_input()
 nums = []
-for ls in l:
+for ls in inp:
     num = ""
     for lss in ls:
         if lss.isnumeric():

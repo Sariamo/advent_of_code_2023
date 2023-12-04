@@ -1,12 +1,11 @@
-l = []
-with open("input") as i:
-    for inp in i.readlines():
-        l.append(inp)
+import utils
+
+inp = utils.get_input()
 
 nums = []
 nums_words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-for ls in l:
+for ls in inp:
     num = ""
     word = ""
     for lss in ls:

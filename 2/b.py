@@ -1,10 +1,9 @@
-l = []
-with open("input") as i:
-    for inp in i.readlines():
-        l.append(inp)
+import utils
+
+inp = utils.get_input()
 
 s = 0
-for i, game in enumerate(l):
+for i, game in enumerate(inp):
 
     mins = [None, None, None]
     draws = game.split(": ")[1].split("; ")

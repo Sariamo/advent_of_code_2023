@@ -1,11 +1,10 @@
-l = []
-with open("input") as i:
-    for inp in i.readlines():
-        l.append(inp)
+import utils
+
+inp = utils.get_input()
 
 sum = 0
 max_num = [12, 13, 14]
-for i, game in enumerate(l):
+for i, game in enumerate(inp):
     game_outcome = True
     draws = game.split(": ")[1].split("; ")
     for d in draws:
