@@ -2,7 +2,7 @@ def get_input():
     l = []
     with open("input") as i:
         for inp in i.readlines():
-            l.append(str(inp))
+            l.append(str(inp).replace("\n", ""))
     return l
 
 
